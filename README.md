@@ -1,8 +1,16 @@
-# Getting Started with Create React App
+# ESLint Demo with React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started with Create React App / Available Scripts
 
-## Available Scripts
+### Set npm registry for the current project
+    npm config set registry https://registry.npmjs.org/
+
+You have to run the above command if the default registry is set to https://npm.pkg.github.com, otherwise the CRA command will fail. Alternatively, you can set it for the current project by adding the following line to the `.npmrc` file in the root of the project.
+
+### Create a react app
+    npx create-react-app . --template typescript --registry=https://registry.npmjs.org
+
+If you want to have assign a different app name, then remove the dot at the end of the command `npx create-react-app .` and add the app name.
 
 In the project directory, you can run:
 
@@ -44,3 +52,18 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+---
+
+## ESLint Setup
+
+To learn ESLint, check out the [ESLint documentation](https://eslint.org/).
+
+### Install ESLint
+    npm install eslint eslint-plugin-react eslint-plugin-react-hooks --save-dev
+
+### Initialize ESLint
+    npx eslint --init
+
+### Install eslint-plugin-react
+    npm install eslint-plugin-react --save-dev
